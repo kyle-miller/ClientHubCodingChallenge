@@ -10,6 +10,9 @@ Houses a FizzBuzz like application to be deployed as a Google Cloud Function. ht
 
 There's also a Docker wrapper for the Google Cloud function.
 
+- `docker build -t fizzbuzz-api .`
+- `docker run -it --rm --name fizz-buzz-api -e FUNCTION_URL='https://cloud.location.function.url' -e MAX_RANGE='50' fizzbuzz-api`
+
 - docker-api-wrapper/fizzbuzz-api.py
    - Flask script wrapping the fizz buzz function in the Cloud.
 - docker-api-wrapper/Dockerfile
